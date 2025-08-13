@@ -30,4 +30,4 @@ jobs:
       run: pytest
 
     - name: Security scan with Bandit
-      run: bandit -r . -x tests
+      run: bandit -r . --exclude ./tests
